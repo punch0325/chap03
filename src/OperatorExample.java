@@ -11,7 +11,7 @@ public class OperatorExample {
 		  ● Expression : 연산식
 		  	
 		        [연산자는 위 -> 아래 차례로 우선순위처리 된다]  
-		  		- 1항 : !(not) , ++ , -- (++와 --는 리터럴이 올 수 없고 변수만 가능하다)
+		  		- 1항 : !(not) , ++ , -- (증감연산자는 리터럴이 올 수 없고 변수만 가능하다)
 		  		
 		  		- 2항
 		  		     1) 산술 연산자 : + , - , * , / , %(나눗셈의 나머지를 구하는 연산자)
@@ -29,15 +29,17 @@ public class OperatorExample {
 		Scanner scan = new Scanner(System.in);
 		
 		int num1 = 0;
-		System.out.print("숫자를 입력하세요 : ");
+		
+		System.out.print("num1의 숫자를 입력하세요 : ");
 		num1 = scan.nextInt();
 		
 		num1++;
 		
 		int result = 0;
 		result = num1;
-				
-		System.out.println(result);
+		
+		System.out.println("num1의 증감 : "+result);
+
 		
 	}
 
